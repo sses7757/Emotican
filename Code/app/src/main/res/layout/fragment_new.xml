@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:scrollbars="none">
+
+        <GridLayout
+            android:id="@+id/grid_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="400"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_height="@dimen/main_element_height"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_margin="@dimen/large_margin"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageBlank"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:src="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/textBlank"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Blank"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/main_text_size"/>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_gravity="fill"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_height="@dimen/main_element_height"-->
+                <!--android:layout_column="1"-->
+                <!--android:layout_row="0"-->
+                <!--android:layout_margin="@dimen/large_margin"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="5"-->
+                    <!--android:src="@drawable/ripple_bg_gray" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/text1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="dont"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="@dimen/main_text_size"/>-->
+
+            <!--</LinearLayout>-->
+
+        </GridLayout>
+
+    </ScrollView>
+</LinearLayout>

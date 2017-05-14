@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDeepDark"
+        tools:context="com.emotican.emotican.DrawActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorBlack"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backward"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/tiny_margin"
+                android:background="@drawable/ripple_bg_nolimit_trans_small"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorLightGray"
+                android:src="@mipmap/backward" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:src="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/layerUp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/tiny_margin"
+                android:hapticFeedbackEnabled="false"
+                android:background="@drawable/ripple_bg_nolimit_trans_small"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorLightGray"
+                android:src="@mipmap/layer_up" />
+
+
+            <ImageButton
+                android:id="@+id/undo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/tiny_margin"
+                android:background="@drawable/ripple_bg_nolimit_trans_small"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorLightGray"
+                android:src="@mipmap/undo" />
+
+            <ImageButton
+                android:id="@+id/redo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/tiny_margin"
+                android:background="@drawable/ripple_bg_nolimit_trans_small"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorLightGray"
+                android:src="@mipmap/redo" />
+
+            <ImageButton
+                android:id="@+id/layerDown"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/tiny_margin"
+                android:background="@drawable/ripple_bg_nolimit_trans_small"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorLightGray"
+                android:src="@mipmap/layer_down" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:src="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/save"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/tiny_margin"
+                android:background="@drawable/ripple_bg_nolimit_trans_small"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorLightGray"
+                android:src="@mipmap/save" />
+
+        </LinearLayout>
+
+        <com.emotican.customview.ImageEditor
+            android:id="@+id/image_edit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="@drawable/bg_trans_blocks"/>
+
+        <RelativeLayout
+            android:id="@+id/labels_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="@color/colorDeepDark">
+
+            <include
+                layout="@layout/mould_label_layout"/>
+
+            <include
+                layout="@layout/default_label_layout"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.4"
+            android:background="@color/colorDeepDark2" >
+
+            <!--<include-->
+                <!--layout="@layout/move_scroll_layout"/>-->
+
+            <include
+                layout="@layout/color_scroll_layout"/>
+
+            <!--<include-->
+                <!--layout="@layout/shape_scroll_layout"/>-->
+
+            <!--<include-->
+                <!--layout="@layout/text_scroll_layout"/>-->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:background="@color/colorDeepDark"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mould"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/tiny_margin"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/tiny_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_bg_nolimit_trans"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/moulds"
+                android:tint="@color/colorGray" />
+
+            <ImageButton
+                android:id="@+id/shape"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/tiny_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/big_margin"
+                android:layout_marginTop="@dimen/tiny_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_bg_nolimit_trans"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/shapes"
+                android:tint="@color/colorGray" />
+
+            <ImageButton
+                android:id="@+id/photo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/tiny_margin"
+                android:layout_marginBottom="@dimen/tiny_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:background="@drawable/ripple_bg_nolimit_trans"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorGray"
+                android:src="@mipmap/photos" />
+
+            <ImageButton
+                android:id="@+id/magic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/tiny_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/tiny_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_bg_nolimit_trans"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/magic_wand"
+                android:tint="@color/colorGray" />
+
+            <ImageButton
+                android:id="@+id/character"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/tiny_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/tiny_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_bg_nolimit_trans"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/characters"
+                android:tint="@color/colorGray" />
+
+            <ImageButton
+                android:id="@+id/effect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/tiny_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/tiny_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_bg_nolimit_trans"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/drops"
+                android:tint="@color/colorGray" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/draw_help_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher_round" />
+
+</RelativeLayout>

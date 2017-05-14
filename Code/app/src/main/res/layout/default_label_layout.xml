@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/tiny_margin"
+    android:layout_marginTop="@dimen/tiny_margin"
+    android:layout_alignParentLeft="true" >
+
+    <ImageButton
+        android:id="@+id/default_label_help"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/ripple_bg_nolimit_trans"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/help_round"
+        android:tint="@color/colorGray" />
+
+    <ImageButton
+        android:id="@+id/default_label_move"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/ripple_bg_nolimit_trans"
+        android:tint="@color/colorLightBlue"
+        android:src="@mipmap/move_rotate"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/default_label_color"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/ripple_bg_nolimit_trans"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/colors"
+        android:tint="@color/colorGray" />
+
+</LinearLayout>

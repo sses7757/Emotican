@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.emotican.emotican.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageHelp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/help" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            app:srcCompat="@android:color/transparent" />
+
+        <ImageButton
+            android:id="@+id/imageSetting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:src="@mipmap/setting" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@color/colorGray">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <LinearLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/newEmoji"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginRight="@dimen/huge_margin"
+                android:background="@drawable/ripple_bg_nolimit_trans"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorLightBlue"
+                android:src="@mipmap/plus"
+                android:contentDescription="" />
+
+            <ImageButton
+                android:id="@+id/netEmoji"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/large_margin"
+                android:layout_marginRight="@dimen/large_margin"
+                android:background="@drawable/ripple_bg_nolimit_trans"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/cloud" />
+
+            <ImageButton
+                android:id="@+id/localEmoji"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/huge_margin"
+                android:background="@drawable/ripple_bg_nolimit_trans"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/local" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="@dimen/strip_width"
+            android:layout_height="@dimen/strip_height"
+            android:layout_alignParentTop="true"
+            android:foreground="@color/colorDarkBlue" />
+
+    </RelativeLayout>
+
+</LinearLayout>

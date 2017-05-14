@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Emotican</string>
+    <string name="action_settings">设置</string>
+    <string name="all">全部</string>
+    <string name="hot">热门</string>
+    <string name="other">其他</string>
+    <string name="custom">自定义</string>
+    <string name="panda">金馆长</string>
+    <string name="beifang">北方</string>
+    <string name="moxing">魔性小人</string>
+    <string name="hyoko">兵库北</string>
+    <string name="yaoming">姚明</string>
+    <string name="doge">doge</string>
+    <string name="huanzhu">还珠格格</string>
+    <string name="cat_gua">瓜皮</string>
+    <string name="teletubbies">天线宝宝</string>
+
+    <string-array name="all_shown_categories">
+        <item>金馆长</item>
+        <item>魔性小人</item>
+        <item>兵库北</item>
+        <item>北方</item>
+        <item>姚明</item>
+        <item>doge</item>
+        <item>还珠格格</item>
+        <item>Cat</item>
+        <item>天线宝宝</item>
+    </string-array>
+    <string name="move">移动</string>
+    <string name="alpha">透明</string>
+    <string name="gray">灰度</string>
+    <string name="faces">人脸</string>
+    <string name="outfit">外形</string>
+    <string name="text">字</string>
+</resources>

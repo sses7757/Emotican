@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:scrollbars="none"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/hot"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/custom"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/faces"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/outfit"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/other"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/panda"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/moxing"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/beifang"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/yaoming"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/hyoko"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/teletubbies"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/huanzhu"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/cat_gua"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="@dimen/labels_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg_nolimit_trans_small"
+            android:text="@string/doge"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/small_text_size" />
+
+    </LinearLayout>
+</HorizontalScrollView>
